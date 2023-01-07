@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Поле ввода различных символов, повводи разные символы.</p>
+    <input type="text">
+    <hr>
+    <p>Данное поле предназначенно для введения, только цифр. Попробуй ввести не цифру. Также стрелочка справа прибавляет, или уменьшает введённое.</p>
+    <input type="number">
+    <hr>
+    <p>Есть атрбитуты ограничивающие прибавление, допустим здесь минимальное значение 1, максимальное 10, больше ты правой стрелочкой не введёшь</p>
+    <input type="number" min="1" max="10">
+    <hr>
+    <p>Также есть атрибут шага, здесь шаг стрелочкой в 5</p>
+    <input type="number" step="5">
+    <hr>
+    <p>Поле ввода паролей, в нег оможно вводить что угодно, но отражаться на экране эт оен будет.</p>
+    <input type="password">
+    <hr>
+    <p>Ползунок отображения, причем количество переходов можно настраивать тегом max, если здесь ранжирования около 100 точек.</p>
+    <input type="range">
+    <hr>
+    <p>То тут их 10</p>
+    <input type="range" max="10">
+    <hr>
+    <p>А тут 2</p>
+    <input type="range" max="2">
+    <hr>
+    <p>Поле ввода даты</p>
+    <input type="date">
+    <hr>
+    <p>Поле выбора цвета</p>
+    <input type="color">
+    <hr>
+    <p>Это кнопки ввода, которые работают только в теге с формой, отправляет или очищает всё содержимое тега form.</p>
+    <input type="submit">
+    <input type="reset">
+    <hr>
+    <p>Текст этих полей ввода, можно изменять атрибутом value</p>
+    <input type="submit" value="Изменено">
+    <input type="reset" value="Дважды">
+    <hr>
+    <p>Следующие поля ввода в списке. Список делается с помощью тега datalist, а его элементы option варианты текста в поле ввода.</p>
+    <input type="text" list="list">
+    <datalist id="list">
+        <option value="1">Инженер</option>
+        <option value="2">Врач</option>
+        <option value="3">Художник</option>
+        <option value="4">Дотер</option>
+        <option value="5(хускар)">Крепкий туз</option>
+    </datalist>    
+    <hr>
+    <p>Поле ввода email, здесь есть валидация базовая, нельзя отправить его без @ и ".", если он будет обёрнут в тег form.</p>
+    <input type="email">
+    <hr>
+    <p>Поле ввода ссылка с нативной валидацией ссылки.</p>
+    <input type="url">
+    <hr>
+    <p>Сюда можно вставить изображение, но пиздец бесполезно.</p>
+    <input type="image">
+    <hr>
+    <p>Данный тип предназначен для введения номера телефона, работае только ан телефоне, при неаведении на него, клавиатура телефона переключается на цифры.</p>
+    <input type="tell">
+    <hr>
+    <p>Поле ввода поиска, больше для браузеров, показывает что это поля для поисковых запросов.</p>
+    <input type="search">
+    <hr>
+    <p>Предназначен для выбора даты и времени, локальные.</p>
+    <input type="datetime-local">
+    <hr>
+    <p>Предназначен для выбора месяца и года.</p>
+    <input type="month">
+    <hr>    
+    <p>Предназначен для выбора времени.</p>
+    <input type="time">
+    <hr>
+    <p>Предназначен для хранения информации по выбору недели.</p>
+    <input type="time">
+    <hr>
+    <p>Скрывает поле ввода. Для передачи в поле промежуточных данных которые пользователь не может знать.</p>
+    <input type="hidden" value="Скрытое дополнительное значение">
+    <hr>
+    <p>Для передачи и хранения пользовательских файлов.</p>
+    <input type="file" >
+    <hr>
+    <p>Для передачи и хранения пользовательских файлов, здесь можно добавить несколько файлов.</p>
+    <input type="file" multiple>
+    <hr>
+    <p>Для передачи выбора каких-то дополнительных опций. В этом поле можно выбрать сразу несколько значений, одновременно.</p>
+    <input type="checkbox" value="option1">Пиво
+    <br>
+    <input type="checkbox" value="option2">Водка
+    <br>
+    <input type="checkbox" value="option3">Самогон
+    <br>
+    <hr>
+    <p>Для передачи выбора каких-то дополнительных опций.Чтобы все опции нельзя было выбрать одномоменто, выбор связывается одинаковым значением имени.</p>
+    <input type="radio" name="option1"  value="option1">Пиво
+    <br>
+    <input type="radio" name="option1"  value="option1">Водка
+    <br>
+    <input type="radio" name="option1" value="option1">Самогон
+    <br>
+    <hr>   
+    <p>Также с помощью атрбута checked можно заадть стандартный выбор (умолчанию)</p>
+    <input type="radio" name="option2"  value="option1">В жопу
+    <br>
+    <input type="radio" name="option2"  value="option1">В дотку
+    <br>
+    <input type="radio" checked name="option2" value="option1">Похронить бабку
+    <br>
+    <hr>
+</body>
+</html>
